@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ['...', 'gradle']
+
+[phases.build]
+cmds = ['gradle build --no-daemon']
+
+[start]
+cmd = 'java -jar build/libs/hash-api.jar'
